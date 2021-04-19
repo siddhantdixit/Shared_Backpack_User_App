@@ -28,8 +28,6 @@ Please read Code of conduct before contributing
 
 ## Installation
 
-# Installation
-
 Shared Backpack system prerequisites
 - [Flutter SDK][fsdk]
 - [Android Studio][astudio]
