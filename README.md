@@ -1,4 +1,4 @@
-# shared_backpack_user_app
+# Shared Backpack User App
 
 Shared backpack user app
 
