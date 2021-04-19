@@ -1,16 +1,47 @@
 # Shared Backpack User App
 
-Shared backpack user app
+## Components
 
-## Getting Started
+The User app Section for the Shared-Backpack Project.
 
-This project is a starting point for a Flutter application.
+1. Shared Backpack user app
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Comunity Impact
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The project focuses on 
+
+1. Cheap Travel
+2. Level Group Travel
+
+## Tech Stack
+
+1. Flutter (user app)
+
+## Contribution
+
+Read [contributing.md]() before contributing
+
+## Code of conduct 
+
+Please read Code of conduct before contributing 
+
+## Installation
+
+# Installation
+
+Shared Backpack system prerequisites
+- [Flutter SDK][fsdk]
+- [Android Studio][astudio]
+
+Clone and change into the project
+```sh
+$ git clone https://github.com/Incentive-Coders/Shared_Backpack_User_App.git
+```
+
+Install packages
+```sh
+$ flutter pub get
+```
+
+Start developing!
