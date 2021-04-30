@@ -10,9 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.orangeAccent[100],
-      ),
+      theme: ThemeData(),
       home: MainPage(),
     );
   }
@@ -26,7 +24,11 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) => Scaffold(
+        backgroundColor: Colors.black,
         drawer: NavBar(),
-        appBar: AppBar(),
+        appBar: AppBar(
+          backgroundColor: Color(0xffE4C2B0),
+          iconTheme: IconThemeData(color: Colors.black),
+        ),
       );
 }

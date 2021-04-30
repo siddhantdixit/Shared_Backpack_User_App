@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:shared_backpack_user_app/widgets/NavBar.dart';
 
-class HomePage extends StatelessWidget {
+class UserPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
       drawer: NavBar(),
       appBar: AppBar(
           title: Text(
-            "HomePage",
+            "Support",
             style: TextStyle(color: Colors.black),
           ),
           centerTitle: true,
