@@ -11,12 +11,14 @@ class HomePage extends StatelessWidget {
       drawer: NavBar(),
       appBar: AppBar(
           title: Text(
-            "HomePage",
-            style: TextStyle(color: Colors.black),
+            "Home",
+            style: TextStyle(color: Colors.black, fontSize: 25),
           ),
           centerTitle: true,
           backgroundColor: Color(0xffE4C2B0),
-          iconTheme: IconThemeData(color: Colors.black)),
+          iconTheme: IconThemeData(
+            color: Colors.black,
+          )),
     );
   }
 }

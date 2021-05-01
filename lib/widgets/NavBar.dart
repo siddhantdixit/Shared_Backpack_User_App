@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_backpack_user_app/pages/HomePage.dart';
+import 'package:shared_backpack_user_app/pages/Notificatios.dart';
 import 'package:shared_backpack_user_app/pages/People.dart';
 import 'package:shared_backpack_user_app/pages/Settings.dart';
 import 'package:shared_backpack_user_app/pages/Support.dart';
@@ -64,7 +65,15 @@ class NavBar extends StatelessWidget {
                 icon: Icons.settings,
                 onClicked: () => selectedItem(context, 3),
               ),
-              const SizedBox(height: 300),
+              const SizedBox(
+                height: 16,
+              ),
+              buildMenuItem(
+                text: 'Notifications',
+                icon: Icons.notifications,
+                onClicked: () => selectedItem(context, 4),
+              ),
+              const SizedBox(height: 200),
               Divider(
                 color: Colors.black54,
               ),
@@ -115,6 +124,11 @@ class NavBar extends StatelessWidget {
       case 3:
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => Settings(),
+        ));
+        break;
+      case 4:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => Notifications(),
         ));
         break;
     }
