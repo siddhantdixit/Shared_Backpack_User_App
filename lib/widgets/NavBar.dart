@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_backpack_user_app/pages/HomePage.dart';
+import 'package:shared_backpack_user_app/pages/Log_in.dart';
 import 'package:shared_backpack_user_app/pages/Notificatios.dart';
 import 'package:shared_backpack_user_app/pages/People.dart';
 import 'package:shared_backpack_user_app/pages/Settings.dart';
@@ -80,7 +81,11 @@ class NavBar extends StatelessWidget {
               const SizedBox(
                 height: 16,
               ),
-              buildMenuItem(text: 'Log Out', icon: Icons.exit_to_app),
+              buildMenuItem(
+                text: 'Log Out',
+                icon: Icons.exit_to_app,
+                onClicked: () => selectedItem(context, 5),
+              ),
             ],
           )),
     );
@@ -131,6 +136,10 @@ class NavBar extends StatelessWidget {
           builder: (context) => Notifications(),
         ));
         break;
+      case 5:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => LogIn(),
+        ));
     }
   }
 
