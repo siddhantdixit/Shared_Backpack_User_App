@@ -12,12 +12,12 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
           title: Text(
             "Home",
-            style: TextStyle(color: Colors.black, fontSize: 25),
+            style: TextStyle(color: Color(0xffE4C2B0), fontSize: 25),
           ),
           centerTitle: true,
-          backgroundColor: Color(0xffE4C2B0),
+          backgroundColor: Colors.black,
           iconTheme: IconThemeData(
-            color: Colors.black,
+            color: Color(0xffE4C2B0),
           )),
     );
   }
