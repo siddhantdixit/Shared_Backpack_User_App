@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shared_backpack_user_app/pages/HomePage.dart';
+import 'package:shared_backpack_user_app/pages/IntroPage.dart';
+
+import 'package:shared_backpack_user_app/pages/Log_in.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: HomePage(),
+      home: IntroPage(),
     );
   }
 }
