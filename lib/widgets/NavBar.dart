@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:shared_backpack_user_app/pages/HomePage.dart';
 import 'package:shared_backpack_user_app/pages/IntroPage.dart';
@@ -6,7 +7,7 @@ import 'package:shared_backpack_user_app/pages/Notificatios.dart';
 import 'package:shared_backpack_user_app/pages/People.dart';
 import 'package:shared_backpack_user_app/pages/Settings.dart';
 import 'package:shared_backpack_user_app/pages/Support.dart';
-import 'package:shared_backpack_user_app/pages/UserPage.dart';
+import 'package:shared_backpack_user_app/userprofile/Profile.dart';
 
 class NavBar extends StatelessWidget {
   final name = 'Aman Gupta';
@@ -76,6 +77,14 @@ class NavBar extends StatelessWidget {
                     ],
                   ),
                 ),
+              buildHeader(
+                name: name,
+                email: email,
+                urlImage: urlImage,
+                onClicked: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => Userprofile(),
+                )),
+
               ),
               const SizedBox(height: 30),
 
@@ -139,6 +148,15 @@ class NavBar extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 100),
+              const SizedBox(
+                height: 16,
+              ),
+              buildMenuItem(
+                text: 'Profile',
+                icon: Icons.person,
+                onClicked: () => selectedItem(context, 5),
+              ),
+              const SizedBox(height: 200),
               Divider(
                 indent: 20,
                 endIndent: 20,
@@ -217,6 +235,11 @@ class NavBar extends StatelessWidget {
       case 4:
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => Notifications(),
+        ));
+        break;
+      case 5:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => Userprofile(),
         ));
         break;
     }
