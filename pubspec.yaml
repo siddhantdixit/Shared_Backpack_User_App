@@ -54,7 +54,7 @@ flutter:
   fonts:
     - family:  MyFlutterApp
       fonts:
-       - asset: fonts/Icons.ttf
+       - asset: fonts/Icons_1.ttf
     - family: Bodoni_Moda
       fonts:
         - asset: fonts/BodoniModa-Italic-VariableFont_opsz,wght.ttf

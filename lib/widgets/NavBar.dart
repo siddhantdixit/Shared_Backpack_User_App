@@ -7,6 +7,7 @@ import 'package:shared_backpack_user_app/pages/Notificatios.dart';
 import 'package:shared_backpack_user_app/pages/People.dart';
 import 'package:shared_backpack_user_app/pages/Settings.dart';
 import 'package:shared_backpack_user_app/pages/Support.dart';
+import 'package:shared_backpack_user_app/pages/UserPage.dart';
 import 'package:shared_backpack_user_app/userprofile/Profile.dart';
 
 class NavBar extends StatelessWidget {
@@ -77,6 +78,7 @@ class NavBar extends StatelessWidget {
                     ],
                   ),
                 ),
+              ),
               buildHeader(
                 name: name,
                 email: email,
